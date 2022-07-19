@@ -1,0 +1,8 @@
+packageEK/RegistrationServlet.class
+packageEK/UserSaver.class
+packageEK/RequestExtractor.class
+packageEK/User.class
+packageEK/UsersDataBase.class
+packageEK/FileReader.class
+packageEK/UserServlet.class
+packageEK/UnitTestUserSaver.class
