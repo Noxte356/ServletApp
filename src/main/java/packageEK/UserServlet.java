@@ -32,10 +32,6 @@ public class UserServlet extends HttpServlet {
         User user = extractor.parsing(postBody);
         UserSaver userSaver = new UserSaver();
         userSaver.save(user);
-        // подключу jdbc
-
-//        usersDataBase.add(user);
-//        writer.println(usersDataBase.get().toString());
         writer.println("DataBase");
     }
 }
