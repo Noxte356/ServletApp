@@ -1,18 +1,16 @@
 package packageEK;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class UsersDataBase {
-    private List<User> usersList = new ArrayList<>();
+    public boolean findUser(String id){
+        ConnectorToUsersDataBase connectorToUsersDataBase = new ConnectorToUsersDataBase();
+        String find = "SELECT user_id, user_name, user_mail, user_password" +
+                "FROM public.users" + "WHERE user_id = " + id + ";";
+        connectorToUsersDataBase.connect(find);
 
-    public UsersDataBase() {
-
-    }
-    public void add(User user){
-        usersList.add(user);
-    }
-    public User get(){
-        return usersList.get(0);
     }
 }

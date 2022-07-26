@@ -9,10 +9,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
 
 @WebServlet(urlPatterns = {"/user"})
 
@@ -23,7 +19,7 @@ public class UserServlet extends HttpServlet {
         // спросить про датуБейз во всех классах
 //        UsersDataBase usersDataBase = new UsersDataBase();
         // создам экстрактор + ридер + райтер
-        RequestExtractor extractor = new RequestExtractor();
+        UserRequestExtractor extractor = new UserRequestExtractor();
         BufferedReader reader = req.getReader();
         PrintWriter writer = resp.getWriter();
         // прочитаю тело запроса post
@@ -31,7 +27,8 @@ public class UserServlet extends HttpServlet {
         // спаршу тело ответа на поля класса User
         User user = extractor.parsing(postBody);
         UserSaver userSaver = new UserSaver();
-        userSaver.save(user);
-        writer.println("DataBase");
+        UserDAO userDAO  = new UserSaver();
+        userDAO.save(user);
+        writer.println(req.getRequestURI());
     }
 }
