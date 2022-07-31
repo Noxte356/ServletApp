@@ -1,5 +1,7 @@
 package packageEK;
 
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -26,9 +28,11 @@ public class UserServlet extends HttpServlet {
         String postBody = reader.readLine();
         // спаршу тело ответа на поля класса User
         User user = extractor.parsing(postBody);
-        UserSaver userSaver = new UserSaver();
-        UserDAO userDAO  = new UserSaver();
+        UserDAO userDAO  = new UserRealizationDAO();
         userDAO.save(user);
-        writer.println(req.getRequestURI());
+        String location = "/ServletAppi/personalAccount/" + user.getId();
+        resp.sendRedirect(location);
+
+
     }
 }

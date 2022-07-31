@@ -1,8 +1,10 @@
 /Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/User.java
+/Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/UserRealizationDAO.java
+/Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/UserPersonalAccount.java
 /Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/UserServlet.java
 /Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/FileReader.java
-/Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/RequestExtractor.java
-/Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/UsersDataBase.java
-/Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/UnitTestUserSaver.java
-/Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/UserSaver.java
+/Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/ConnectorToDB.java
+/Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/UserDAO.java
+/Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/UrlExtractor.java
+/Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/UserRequestExtractor.java
 /Users/egor/DeveloperTools/IdeaProjects/ServletApp/src/main/java/packageEK/RegistrationServlet.java

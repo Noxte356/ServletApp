@@ -7,16 +7,23 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = {"/PersonalAccount/"})
+@WebServlet(urlPatterns = {"/personalAccount/*"})
 public class UserPersonalAccount extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
+        PrintWriter writer = resp.getWriter();
         UrlExtractor urlExtractor = new UrlExtractor();
-        String idFromUrl = urlExtractor.parsing(req.getRequestURI());
-        UsersDataBase usersDataBase = new UsersDataBase();
-        usersDataBase.findUser();
+        int idFromUrl = urlExtractor.parsing(req.getRequestURI());
+//        UserRealizationDAO userFinder = new UserRealizationDAO();
+        UserDAO userFinder = new UserRealizationDAO();
+        User user = userFinder.findById(idFromUrl);
+        writer.println(user);
+
+
+
 
 
 

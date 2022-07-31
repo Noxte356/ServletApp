@@ -1,8 +1,10 @@
+packageEK/UrlExtractor.class
 packageEK/RegistrationServlet.class
-packageEK/UserSaver.class
-packageEK/RequestExtractor.class
+packageEK/UserDAO.class
+packageEK/UserRequestExtractor.class
 packageEK/User.class
-packageEK/UsersDataBase.class
+packageEK/UserRealizationDAO.class
 packageEK/FileReader.class
 packageEK/UserServlet.class
-packageEK/UnitTestUserSaver.class
+packageEK/ConnectorToDB.class
+packageEK/UserPersonalAccount.class

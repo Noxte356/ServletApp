@@ -5,8 +5,9 @@ public class UserRequestExtractor {
         User user = new User();
 //        user_id=211414&user_nickName=test&user_mail=test%40mail.ru&user_password=agog
         String[] userData = request.split("=");
-        String[] id = userData[1].split("&");
-        user.setId(id[0]);
+        String[] idParse = userData[1].split("&");
+        int id = Integer.parseInt(idParse[0]);
+        user.setId(id);
         String[] name = userData[2].split("&");
         user.setName(name[0]);
         String[] mail = userData[3].split("&");

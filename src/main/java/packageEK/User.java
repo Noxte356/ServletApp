@@ -1,16 +1,16 @@
 package packageEK;
 
 public class User {
-    private String id;
+    private int id;
     private String name;
     private String mail;
     private String password;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -36,5 +36,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "{id: " + id
+                + ", name: " + name
+                + ", mail: " + mail
+                + ", password: " + password
+                + "}";
     }
 }
