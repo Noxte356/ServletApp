@@ -5,7 +5,7 @@
          version="4.0">
     <servlet>
         <servlet-name>first-servlet</servlet-name>
-        <servlet-class>packageEK.RegistrationServlet</servlet-class>
+        <servlet-class>packageEK.controller.RegistrationServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>first-servlet</servlet-name>

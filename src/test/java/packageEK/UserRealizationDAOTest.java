@@ -1,6 +1,8 @@
 package packageEK;
 
 import org.junit.jupiter.api.Test;
+import packageEK.model.User;
+import packageEK.model.UserRealizationDAO;
 
 import static org.junit.jupiter.api.Assertions.*;
 

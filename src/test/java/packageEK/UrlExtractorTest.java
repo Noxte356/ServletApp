@@ -2,6 +2,7 @@ package packageEK;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import packageEK.model.UrlExtractor;
 
 import static org.junit.jupiter.api.Assertions.*;
 
